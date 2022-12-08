@@ -8,11 +8,72 @@
     <link rel="stylesheet" href="css/style.css">
     <title>WarleyTur</title>
 </head>
-<nav>
-    <a href="empresasaereas.html">Empresas Aéreas</a>
-    <a href="destinos.html">Destinos</a>
-</nav>
+    
+<script>
+    function permitido() {
+        var confirma = window.confirm("Você deseja viajar?");
+        if(confirma) {
+            window.alert("Agradeçemos a preferência!")
+        }
+        else {
+            window.alert("Então veio fazer o que aqui?");
+            window.location.href="https://www.google.com";
+        }
+    }
+
+    permitido();
+
+
+</script>
+
 <body>
-    WarleyTur<br> Te levando tão longe quanto seus sonhos!
+    <nav>
+        <ul>
+
+
+            <li>
+                <a href="index.html">Página inicial</a>
+            </li>
+            <li>
+                <a href="tabelas.html">Tabelas</a>
+            </li>
+            <li>
+                <a href="empresasaereas.html">Empresas aéreas</a>
+                <ul>
+                    <li>
+                        <a href="melhoresempresas.html">Melhores empresas</a>
+
+                    </li>
+                    <li>
+                        <a href="avaliacoes.html">Avaliações</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="suporte.html">Suporte</a>
+            </li>
+
+        </ul>
+    </nav>
+    <main>
+        <h1>
+            WarleyTur<br> Te levando tão longe quanto seus sonhos! <br>
+        </h1>
+
+        <br>
+
+        <p class="preload">
+            Bem vindo a WarleyTur! Empresa de confiança focada em estruturar para você as férias que você merece!
+        </p>
+
+        <br>
+
+        <p>
+            Nossa empresa trabalha forneçendo a você oportunidades incríveis de aproveitar o que há de melhor na vida. Por isso, a WarleuTur reuniu em um único site tudo aquilo necessário para que você e sua família possam fortalecer laços com as melhores lembranças!
+        </p>
+
+        <img src="imagens/ce-travel.jpg" alt="WorldTravel">
+    </main>
 </body>
 </html>

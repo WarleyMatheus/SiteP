@@ -3,16 +3,108 @@
 :root{
     --preto: #000000;
     --amarelo: #ffff00;
+    --amarelofosco: #bdb76b;
+    --amadeirado: #5c6113;
 }
 
 body {
-    background-color: #bdb76b;
+    background-color: var(--amarelofosco);
+}
+
+main {
+    border: 2px solid var(--preto);
+    width: 1000px;
+    margin: auto;
+    padding: 12px 8px 12px 8px;
+    margin-bottom: 30px;
+}
+
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 nav {
-    width: 800px;
-    border: 2px groove var(--preto);
-    margin: auto;
-    padding: 12px;
     background-color: var(--amarelo);
+    width: 900px;
+    height: 30px;
+    margin: auto;
+    padding: 30px;
+    border: solid 2px var(--preto);
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+nav>ul>li:hover>a {
+    color: var(--preto);
+}
+
+nav>ul>li>ul {
+    display: none;
+}
+
+nav>ul>li:hover {
+    background-color: var(--amadeirado);
+    display: block;
+    border-radius: 2%;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+    position: relative;
+    background-color: var(--amadeirado);
+    width: 300px;
+    right: 66px;
+    top: 6px;
+    border-radius: 2%;
+}
+
+nav>ul>li>ul>li {
+    list-style: none;
+    padding: 4px 4px 4px 4px;
+    height: 36px;
+}
+
+nav>ul>li>ul>li>a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+nav>ul>li>ul>li:hover {
+    background-color: var(--amadeirado);
+}
+
+nav>ul>li>ul>li:hover>a {
+    color: var(--preto);
+}
+
+p {
+    color: var(--preto);
+    text-align: left;
+    text-indent: 50px;
+}
+
+ul {
+    background-color: var(--amadeirado);
+    list-style: none;
+
+}
+
+nav>ul>li {
+    float: left;
+    width: 170px;
+    height: 34px;
+    text-align: center;
+    font-size: 15px;
+    list-style: none;
+    padding: 5px 25px 5px 25px;
+}
+
+h1 {
+    color: var(--preto);
+    text-align: center;
 }
